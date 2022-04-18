@@ -1,0 +1,19 @@
+<div class="row cards">
+  <span>
+    Resultados do país: {{ detalhes?.country }}
+    <br />
+    Total de testes: {{ detalhes?.tests?.total | numero }}
+  </span>
+  <div class="col card">
+    <p>Data: {{ detalhes?.day | data }}</p>
+    <p>População: {{ detalhes?.population | numero }}</p>
+  </div>
+  <div class="col card">
+    <p>Novos casos: {{ detalhes?.cases?.new | numero }}</p>
+    <p>Total de casos: {{ detalhes?.cases?.total | numero }}</p>
+  </div>
+  <div class="col card">
+    <p>Novas mortes: {{ detalhes?.deaths?.new | numero }}</p>
+    <p>Total de mortes: {{ detalhes?.deaths?.total | numero }}</p>
+  </div>
+</div>

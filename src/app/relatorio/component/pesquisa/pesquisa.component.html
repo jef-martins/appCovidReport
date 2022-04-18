@@ -1,0 +1,15 @@
+<form class="row" [formGroup]="pesquisaPais">
+  <div class="form-group">
+    <input
+      formControlName="nomePais"
+      type="text"
+      class="form-control"
+      name="nomePais"
+      aria-describedby="pais"
+      placeholder="Digite o nome do país"
+    />
+    <button type="submit" class="btn btn-primary pesquisa" (click)="enviar()">
+      <i class="bi bi-search"></i>
+    </button>
+  </div>
+</form>

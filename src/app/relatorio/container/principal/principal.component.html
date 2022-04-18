@@ -1,0 +1,14 @@
+<body>
+  <div class="container">
+    <app-numeros-globais
+      [dados]="relatorioFacade.dados$ | async"
+    ></app-numeros-globais>
+
+    <app-pesquisa (onPesquisar)="pesquisar($event)"></app-pesquisa>
+
+    <app-relatorio
+      [paises]="relatorioFacade.paises$ | async"
+      [detalhes]="relatorioFacade.detalhes$ | async"
+    ></app-relatorio>
+  </div>
+</body>
